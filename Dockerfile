@@ -10,4 +10,5 @@ RUN echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" >> /etc/apt/so
 RUN apt-get update
 RUN apt-get install yandex-disk
 RUN mkdir /root/Yandex.Disk
+
 ENTRYPOINT ["tail", "-f", "/dev/null"]
